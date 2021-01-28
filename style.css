@@ -1,0 +1,479 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 35.4% 64.6%;
+    grid-template-rows: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #6A707B;
+}
+
+.content__text{
+    padding: 100px 101px 0px 100px;
+    width: 100%;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);;
+}
+.content__text-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 238px;
+}
+.pineapple_logo_no_text{
+    display: none;
+}
+.content__text-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 3px;
+}
+.content__text-nav a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: #6A707B;
+}
+.trophy_logo{
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.content__text-heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 32px;
+    color: #131821;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+.content__text-paragraph{
+    line-height: 28px;
+    margin-bottom: 49px;
+    margin-left: 40px;
+}
+.content__text-form{
+    margin-bottom: 54px;
+}
+.email-container{
+    position: relative;
+    display: block;
+    width: 100%;
+    box-sizing: content-box;
+    padding-right: 184px;
+    margin-bottom: 59px;
+}
+#email{
+    display: block;
+    border: 1px solid #E3E3E4;
+    border-left: 4px solid #4066A5;
+    padding: 26px 0px 24px 40px;
+    width: 100%;
+    box-sizing: content-box;
+    padding-right: 139px;
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+}
+#email:hover{
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+}
+#email:focus{
+    box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+    border-width: 1px 1px 1px 4px;
+    border-style: solid;
+    border-color: #4066A5;
+    outline: none;
+}
+.submit_button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    height: 100%;
+    background-color: transparent;
+    padding: 3px 40px 0 18px;
+    border: none;
+}
+.submit_button:hover{
+    cursor: pointer;
+}
+.submit_button:focus{
+    outline: none;
+}
+.submit_button:disabled{
+    cursor: not-allowed;
+}
+.terms{
+    color: #131821;
+}
+.terms:hover{
+    color: #4066A5;
+}
+.terms:active{
+    color: #233759;
+}
+.terms_agree-label{
+    position: relative;
+    margin-left: 40px;
+    padding-left: 41px;
+}
+#terms_agree{
+    position: absolute;
+    top:-5px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.terms_agree-custom{
+    position: absolute;
+    top:-5px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: 1px solid #E3E3E4;
+    z-index: 1;
+}
+#terms_agree:checked + .terms_agree-custom{
+    background-image: url(./images/ic_checkmark.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4066A5;
+    border: 1px solid #4066A5;
+}
+
+.hide_message{
+    display: none;
+}
+.show_message{
+    display: block;
+    color: #CC0000;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+
+.content__text-line{
+    border-bottom: 1px solid #E3E3E4;
+    margin: 0 39px 50px 40px;
+}
+
+.content__text-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 118px;
+    margin-right: 117px;
+}
+.facebook__logo-container{
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border: 2px solid #E3E3E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.facebook__logo-container:hover{
+    cursor: pointer;
+    background-color: #4267B2;
+    border: 2px solid #4267B2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.facebook__logo-container:active{
+    background: #2F4A80;
+    border: 2px solid #2F4A80;
+}
+.facebook__logo-container svg{
+    fill: #131821;
+    opacity:0.3;
+}
+.facebook__logo-container:hover > svg{
+    fill:white;
+    opacity: 1;
+}
+
+.instagram__logo-container{
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border: 2px solid #E3E3E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.instagram__logo-container:hover{
+    cursor: pointer;
+    background-color: #C13584;
+    border: 2px solid #C13584;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.instagram__logo-container:active{
+    background: #8F2762;
+    border: 2px solid #8F2762;
+}
+.instagram__logo-container svg{
+    fill: #131821;
+    opacity:0.3;
+}
+.instagram__logo-container:hover > svg {
+    fill:white;
+    opacity: 1;
+}
+
+.twitter__logo-container{
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border: 2px solid #E3E3E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.twitter__logo-container:hover{
+    cursor: pointer;
+    background-color: #1DA1F2;
+    border: 2px solid #1DA1F2;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.twitter__logo-container:active{
+    background: #177FBF;
+    border: 2px solid #177FBF;
+}
+.twitter__logo-container svg{
+    fill: #131821;
+    opacity:0.3;
+}
+.twitter__logo-container:hover > svg{
+    fill:white;
+    opacity: 1;
+}
+
+.youtube__logo-container{
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+    border: 2px solid #E3E3E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.youtube__logo-container:hover{
+    cursor: pointer;
+    background-color: #FF0000;
+    border: 2px solid #FF0000;
+    box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+.youtube__logo-container:active{
+    background: #CC0000;
+    border: 2px solid #CC0000;
+}
+.youtube__logo-container svg{
+    fill: #131821;
+    opacity:0.3;
+}
+.youtube__logo-container:hover > svg{
+    fill:white;
+    opacity: 1;
+}
+.content__image{
+    background-image: url(./images/image_summer.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.margin-bottom-for-header{
+    margin-bottom: 129px;
+}
+.margin-bottom-for-heading{
+    margin-bottom: 25px;
+}
+.margin-right-for-paragraph{
+    margin-right: 13px;
+}
+
+@media only screen and (max-width: 1750px){
+    .content__text-media{
+        margin-left: 100px;
+        margin-right:100px;
+    }
+}
+@media only screen and (max-width: 1685px){
+    .content__text-nav a{
+        margin-left: 15px;
+    }
+    .content__text-media{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .content__text-heading{
+        font-size: 28px;
+    }
+    .content__text-paragraph{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 1560px){
+    .pineapple_logo_text{
+        display: none;
+    }
+    .pineapple_logo_no_text{
+        display: block;
+    }
+    .content__text{
+        padding: 80px 60px 0px 60px;
+    }
+    .content__text-header{
+        margin-bottom: 150px;
+    }
+    .email-container{
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+    #email{
+        padding-right: 0;
+        box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 1330px){
+    .content__text{
+        padding: 60px 40px 0px 40px;
+    }
+    .content__text-heading{
+        font-size: 26px;
+        margin-left: 0;
+    }
+    .content__text-paragraph{
+        margin-left: 0;
+    }
+    .content__text-media{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .content__text-header{
+        margin-bottom: 120px;
+    }
+    #email{
+        padding: 24px 0px 22px 25px;
+    }
+}
+@media only screen and (max-width: 1110px){
+    body{
+        display: block;
+    }
+    .content__text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background-image: url(./images/image_summer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: bottom;
+    }
+    .content__image{
+        display: none;
+    }
+    .content__text-header{
+        background-color: #FFFFFF;
+        padding: 10px 20px 16px 20px;
+        align-items: center;
+        margin-bottom: 188px;
+        font-size: 14px;
+    }
+    .pineapple_logo_text{
+        display: none;
+    }
+    .pineapple_logo_no_text{
+        display: block;
+    }
+    .content__text-section{
+        background-image: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+        margin: 0 20px 0 20px;
+        padding: 33px 20px 30px 20px;
+    }
+    .content__text-nav{
+        padding: 6px 0 0 0;
+    }
+    .content__text-nav a{
+        margin-left: 21px;
+    }
+    .trophy_logo{
+       margin: -3px 0 38px 0;
+    }
+    .content__text-heading{
+        font-size: 24px;
+        margin: 0 0 14px 0;
+    }
+    .content__text-paragraph{
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0 0 20px 0;
+    }
+    .content__text-form{
+        margin: 0 0 23px 0;
+    }
+    .email-container{
+        margin: 0 0 27px 0;
+        padding: 0;
+    }
+    #email{
+        padding: 21px 0 19px 15px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .submit_button{
+        padding: 3px 14px 0 18px;
+    }
+    .terms_agree-label{
+        margin: 0;
+    }
+    .content__text-line{
+        margin: 0 0px 20px 0px;
+    }
+    .content__text-media{
+        margin-left: 33px;
+        margin-right: 48px; 
+    }
+}
+@media only screen and (width: 375px) and (height: 812px){
+    .content__text{
+        background-image: url(./images/image_summer_mobile.jpg);
+        background-position-y: bottom;
+        background-size: contain;
+    }
+}
+@media only screen and (max-width: 360px){
+    body{
+        font-size: 12px;
+    }
+    .content__text-header{
+        margin-bottom: 80px;
+    }
+    .content__text-heading{
+        font-size: 20px;
+    }
+    #email{
+        font-size: 12px;
+    }
+    .content__text-media{
+        margin: 0;
+    }
+}
